@@ -1,0 +1,25 @@
+import { services } from './services.js';
+
+export const servicesNames = {
+    [services.AWS_S3_US_WEST_1]: 'AWS S3 US West 1',
+    [services.AWS_S3_EAST]: 'AWS S3 East',
+    [services.AWS_ROUTE_53]: 'AWS Route 53',
+    [services.APTIBLE]: 'Aptible',
+    [services.BIT_BUCKET]: 'BitBucket',
+    [services.CIRCLE_CI]: 'CircleCI',
+    [services.RX_REDEFINED_NAME_SERVERS]: 'Rx Redefined Name Servers',
+    [services.RX_REDEFINED_SERVICE_VPN]: 'Rx Redefined Service (VPN)',
+    [services.RX_REDEFINED_SERVICE_PUBLIC]: 'Rx Redefined Service (Public)',
+    [services.RX_REDEFINED_SERVICE_OFFICE]: 'Rx Redefined Office',
+    [services.RX_REDEFINED_SERVICE_ADMIN]: 'Rx Redefined Admin',
+    [services.RX_REDEFINED_SERVICE_SUPERSET]: 'Rx Redefined Superset',
+    [services.DOCUMO]: 'Documo',
+    [services.GOOGLE_WORKSPACE]: 'Google Workspace',
+    [services.GO_TO_MEETING]: 'GoToMeeting',
+    [services.LOB]: 'Lob',
+    [services.LOG_DNA]: 'LogDNA',
+    [services.MAIL_GUN]: 'Mailgun',
+    [services.PERIMETER_81]: 'Perimeter81',
+    [services.TALK_DESK]: 'TalkDesk',
+    [services.WAY_STAR]: 'Waystar',
+}
