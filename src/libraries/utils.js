@@ -1,3 +1,3 @@
-export const getObjectKeyByValue = function (object, value) {
+export const getObjectKeyByValue = (object, value) => {
     return Object.keys(object).find(key => object[key] === value);
 }

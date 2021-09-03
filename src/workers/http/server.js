@@ -3,6 +3,8 @@ import routes from '../../http/routes.js';
 
 const server = restify.createServer();
 
+server.use(restify.plugins.queryParser());
+
 routes(server);
 
 server.listen(8080, function() {
