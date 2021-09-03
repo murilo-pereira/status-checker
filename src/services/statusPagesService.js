@@ -1,11 +1,27 @@
 import axios from 'axios';
+
 import {servicesUrl} from '../domain/servicesUrl.js';
 import {servicesStatus} from '../domain/servicesStatus.js';
+import {services} from "../domain/services.js";
+
 import {createLog} from '../repositories/logServiceRepository.js';
 import {upsertStatus} from '../repositories/statusServiceRepository.js';
+
 import {getObjectKeyByValue} from '../libraries/utils.js';
 
-export const runStatusPages = async (statusPages) => {
+const statusPages = [
+    services.APTIBLE,
+    services.BIT_BUCKET,
+    services.CIRCLE_CI,
+    services.DOCUMO,
+    services.GO_TO_MEETING,
+    services.LOB,
+    services.LOG_DNA,
+    services.MAIL_GUN,
+    services.TALK_DESK,
+]
+
+export const runStatusPages = async () => {
     let requests = []
 
     statusPages.forEach((value) => {
